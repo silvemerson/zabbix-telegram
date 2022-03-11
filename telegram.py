@@ -1,9 +1,9 @@
+#!/usr/bin/env python3
 
-#!/usr/bin/env python
+import sys
+import telebot
 
-import telebot,sys
-
-BOT_TOKEN='SEU_TOKEN'
+BOT_TOKEN= "1356580905:AAGfBD5oSjUDgQoYJsxs1if88k_2OVymWeI"
 DESTINATION=sys.argv[1]
 SUBJECT=sys.argv[2]
 MESSAGE=sys.argv[3]

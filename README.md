@@ -1,13 +1,23 @@
-# Integração Zabbix Telegram
+====== Integração Zabbix Telegram
 
-instalando o pacote “python-pip“
+==== Requisitos 
 
-apt-get install python-pip
+python3
 
-pacote “python-pip“
+pyTelegramBotAPI
+Download: https://pypi.org/project/pyTelegramBotAPI/0.3.0/
 
-pip install pyTelegramBotAPI
-
-Tutorial de como integrar o Telegram ao Zabbix
+===== Tutorial de como integrar o Telegram ao Zabbix
 
 https://medium.com/@araujo.emerson28/zabbix-integra%C3%A7%C3%A3o-com-o-telegram-6e3a48bdab50
+
+
+==== Testando script 
+
+Primeiro, pegue o id do chat do Telegram:
+
+curl https://api.telegram.org/bot1356580905:AAGfBD5oSjUDgQoYJsxs1if88k_2OVymWeI/getUpdates | jq
+
+Feito isso, execute o seguinte comando:
+
+python3 telegram.py ID_AQUI Testando Alerta
